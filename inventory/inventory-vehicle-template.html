@@ -85,93 +85,103 @@
       <!-- ./page heading -->
 
       <!-- Main Content -->
-      <div class="hyphenated-vehicle-name-w/o-year-gallery">
+      <div class="vehicle-gallery">
         <div class="row">
           <!-- Show the main image when the page is sm or xs -->
           <div class="col-12 d-lg-none d-md-none">
-            <a href="big photo" class="lightbox"><img class="inventory-item-img" src="big photo" alt="Vehicle Name w/o Year"></a>
+            <a class="lightbox" id="main-img" href="big photo"><img class="main-img inventory-item-img" src="big photo" alt="Vehicle Name w/o Year"></a>
           </div>
 
           <!-- Vehicle Details/Description Column -->
-          <div class="col-md-5 mb-4">
-            <div class="row">
+          <div class="col-md-5 mb-4" id="vehicle-information">
+            <div class="row mb-3">
               <div class="col-lg-8">
-                <h2>Vehicle Name w/ Year</h2>
+                <h2 id="vehicle-name">Vehicle Name w/ Year</h2>
               </div>
               <div class="col-lg-4">
-                <h4 style="color: #e52728; text-align: right; margin-bottom: 2rem">
-                  <strong>
-                  price
-                  </strong>
-                </h4>
+                <h4 class="price">price</h4>
               </div>
             </div>
-            <div class="row mt-3">
-              <div class="col-6">
-                <p style="margin-bottom: 0"><strong>Mileage:</strong></p>
+            <div id="mileage">
+              <div class="row">
+                <div class="col-6">
+                  <p style="margin-bottom: 0"><strong>Mileage</strong></p>
+                </div>
+                <div class="col-6">
+                  <p id="mileage" align=right style="margin-bottom: 0">miles</p>
+                </div>
               </div>
-              <div class="col-6">
-                <p align=right style="margin-bottom: 0">miles</p>
-              </div>
+              <hr class="small">
             </div>
-            <hr class="small">
-            <div class="row">
-              <div class="col-6">
-                <p style="margin-bottom: 0"><strong>Exterior:</strong></p>
+            <div id="exterior">
+              <div class="row">
+                <div class="col-6">
+                  <p style="margin-bottom: 0"><strong>Exterior</strong></p>
+                </div>
+                <div class="col-6">
+                  <p id="exterior-color" align=right style="margin-bottom: 0">ext color</p>
+                </div>
               </div>
-              <div class="col-6">
-                <p align=right style="margin-bottom: 0">ext color</p>
-              </div>
+              <hr class="small">
             </div>
-            <hr class="small">
-            <div class="row">
-              <div class="col-6">
-                <p style="margin-bottom: 0"><strong>Interior:</strong></p>
+            <div id="interior">
+              <div class="row">
+                <div class="col-6">
+                  <p style="margin-bottom: 0"><strong>Interior</strong></p>
+                </div>
+                <div class="col-6">
+                  <p id="interior-color" align=right style="margin-bottom: 0">int color</p>
+                </div>
               </div>
-              <div class="col-6">
-                <p align=right style="margin-bottom: 0">int color</p>
-              </div>
+              <hr class="small">
             </div>
-            <hr class="small">
-            <div class="row">
-              <div class="col-6">
-                <p style="margin-bottom: 0"><strong>Transmission</strong></p>
+            <div id="transmission">
+              <div class="row">
+                <div class="col-6">
+                  <p style="margin-bottom: 0"><strong>Transmission</strong></p>
+                </div>
+                <div class="col-6">
+                  <p id="transmission-type" align=right style="margin-bottom: 0">trans type</p>
+                </div>
               </div>
-              <div class="col-6">
-                <p align=right style="margin-bottom: 0">trans type</p>
-              </div>
+              <hr class="small">
             </div>
-            <hr class="small">
-            <div class="row">
-              <div class="col-6">
-                <p style="margin-bottom: 0"><strong>Engine</strong></p>
+            <div id="engine">
+              <div class="row">
+                <div class="col-6">
+                  <p style="margin-bottom: 0"><strong>Engine</strong></p>
+                </div>
+                <div class="col-6">
+                  <p id="engine-type" align=right style="margin-bottom: 0">eng type</p>
+                </div>
               </div>
-              <div class="col-6">
-                <p align=right style="margin-bottom: 0">eng type</p>
-              </div>
+              <hr class="small">
             </div>
-            <hr class="small">
-            <div class="row">
-              <div class="col-6">
-                <p style="margin-bottom: 0"><strong>Gas Mileage</strong></p>
+            <div id="gas-mileage">
+              <div class="row">
+                <div class="col-6">
+                  <p style="margin-bottom: 0"><strong>Gas Mileage</strong></p>
+                </div>
+                <div class="col-6">
+                  <p id="consumption" align=right style="margin-bottom: 0">consumption</p>
+                </div>
               </div>
-              <div class="col-6">
-                <p align=right style="margin-bottom: 0">consumption</p>
-              </div>
+              <hr class="small">
             </div>
-            <hr class="small">
-            <div class="row">
-              <div class="col-4">
-                <p style="margin-bottom: 0"><strong>Vin:</strong></p>
+            <div id="vin">
+              <div class="row">
+                <div class="col-4">
+                  <p style="margin-bottom: 0"><strong>Vin</strong></p>
+                </div>
+                <div class="col-8">
+                  <p id="vin-number" align=right style="margin-bottom: 0">vin #</p>
+                </div>
               </div>
-              <div class="col-8">
-                <p align=right style="margin-bottom: 0">vin #</p>
-              </div>
+              <hr class="small">
             </div>
-            <hr class="small">
-            <div class="row mt-4">
+            <div class="row mt-4" id="long-description">
               <div class="col-12">
-                <p>
+                <p id="long-description-text">
                   long vehicle description
                 </p>
               </div>
@@ -180,12 +190,12 @@
           <!-- ./vehicle details/description column -->
 
           <!-- Gallery Column -->
-          <div class="col-md-7 mb-4">
+          <div class="gallery-column col-md-7 mb-4">
             <!-- hide the main image when the page is sm or xs -->
-            <a class="lightbox d-lg-block d-md-block d-sm-none d-xs-none" href="big photo"><img class="inventory-item-img" src="big photo" alt="Vehicle Name w/o Year"></a>
-            <div class="row no-gutters">
+            <a class="lightbox d-lg-block d-md-block d-sm-none d-xs-none" id="main-img" href="big photo"><img class="main-img inventory-item-img" src="big photo" alt="Vehicle Name w/o Year"></a>
+            <div class="row no-gutters" id="thumbnails-block">
               <div class="col-lg-2 col-3">
-                <a href="big photo" class="lightbox"><img class="inventory-item-img" src="thumb photo" alt="Vehicle Name w/o Year"></a>
+                <a class="lightbox thumbnail" href="big photo"><img class="thumbnail inventory-item-img" src="thumb photo" alt="Vehicle Name w/o Year"></a>
               </div>
             </div>
           </div>
@@ -195,7 +205,7 @@
       <!-- /.main content -->
 
       <!-- Standard Features -->
-      <div class="row">
+      <div class="row" id="standard-features">
         <div class="col-12">
           <h4>Standard Equipment</h4>
           <hr class="mt-1">
@@ -203,28 +213,28 @@
         <div class="col-lg-3 col-6">
           <p style="margin-bottom: 0"><strong>Interior</strong></p>
           <hr class="small">
-          <ul>
+          <ul id="interior-equipment-list">
             <li>int equipment list
           </ul>
         </div>
         <div class="col-lg-3 col-6">
           <p style="margin-bottom: 0"><strong>Exterior</strong></p>
           <hr class="small">
-          <ul>
+          <ul id="exterior-equipment-list">
             <li>ext equipment list
           </ul>
         </div>
         <div class="col-lg-3 col-6">
           <p style="margin-bottom: 0"><strong>Mechanical</strong></p>
           <hr class="small">
-          <ul>
+          <ul id="mechanical-equipment-list">
             <li>mech equipment list
           </ul>
         </div>
         <div class="col-lg-3 col-6">
           <p style="margin-bottom: 0"><strong>Safety</strong></p>
           <hr class="small">
-          <ul>
+          <ul id="safety-equipment-list">
             <li>safety equipment list
           </ul>
         </div>
@@ -248,7 +258,7 @@
 
     <!-- Script for Image Gallery -->
     <script>
-      baguetteBox.run('.hyphenated-vehicle-name-w/o-year-gallery');
+      baguetteBox.run('.vehicle-gallery');
     </script>
 
   </body>
