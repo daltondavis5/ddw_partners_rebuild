@@ -4587,7 +4587,7 @@ tbody.collapse.show {
   color: #fff;
 }
 
-.car-item {
+.inventory-row {
     margin-bottom: 50px;
 }
 
@@ -4609,7 +4609,7 @@ tbody.collapse.show {
     height: 0;
 }
 
-.inventory-preview-wrapper .hidden {
+.hidden-dropdown {
     background: black;
     padding-bottom: 0%;
     height: 0;
@@ -4625,7 +4625,7 @@ tbody.collapse.show {
     width: 100%;
 }
 
-.inventory-preview-wrapper:hover .hidden {
+.inventory-preview-wrapper:hover .hidden-dropdown {
     opacity: .7;
     padding-bottom: 61%;
     font-size: 22px;
